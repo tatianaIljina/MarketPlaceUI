@@ -1,0 +1,8 @@
+<div *ngIf="company">
+    <nz-card style="width:100%;" [nzBordered]="false" [nzTitle]=cardTitile [nzExtra]="extraTemplate">
+        <input nz-input placeholder="Полное наименование" [(ngModel)]="company.fullName" [disabled]="true" />
+    </nz-card>
+  </div>
+  <ng-template #extraTemplate>
+    <a>More</a>
+  </ng-template>
