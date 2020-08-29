@@ -1,6 +1,26 @@
 <div *ngIf="company">
     <nz-card style="width:100%;" [nzBordered]="false" [nzTitle]=cardTitile [nzExtra]="extraTemplate">
         <input nz-input placeholder="Полное наименование" [(ngModel)]="company.fullName" [disabled]="true" />
+        <br />
+        <br />
+        <input nz-input placeholder="Юридический адрес" [(ngModel)]="company.legalAddress" [disabled]="true" />
+        <br />
+        <br />
+        <nz-input-group [nzSize]="'large'">
+            <div nz-row [nzGutter]="">
+                <div nz-col nzSpan="8">
+                    <input nz-input placeholder="ИНН" [(ngModel)]="company.inn" [disabled]="true" />
+                </div>
+                <div nz-col nzSpan="8">
+                    <input nz-input placeholder="КПП" [(ngModel)]="company.kpp" [disabled]="true" />
+                </div>
+                <div nz-col nzSpan="8">
+                    <input nz-input placeholder="ОГРН" [(ngModel)]="company.ogrn" [disabled]="true" />
+                </div>
+            </div>
+        </nz-input-group>
+        <br />
+        <input nz-input placeholder="Генеральный директор" [(ngModel)]="company.kpp" [disabled]="true" />
     </nz-card>
   </div>
   <ng-template #extraTemplate>

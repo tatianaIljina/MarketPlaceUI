@@ -1,0 +1,12 @@
+<!-- <nz-tabset [nzTabPosition]="'top'" [nzType]="'card'">
+    <nz-tab *ngFor="let tab of tabs" [nzTitle]="tab" routerLink="/employees"> 
+        <router-outlet></router-outlet>
+    </nz-tab>
+</nz-tabset> -->
+
+
+<nz-tabset>
+    <nz-tab nzTitle="Сотрудники" routerLink="/employees"></nz-tab>
+    <nz-tab nzTitle="Сотрудники"></nz-tab>
+</nz-tabset>
+<router-outlet ></router-outlet>

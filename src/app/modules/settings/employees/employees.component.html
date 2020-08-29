@@ -1,0 +1,18 @@
+<nz-table #basicTable [nzData]="employees">
+    <thead>
+      <tr>
+        <th>Имя</th>
+        <th>Позиция</th>
+        <th>Электронный адрес</th>
+        <th>Права доступа</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{ data.Name }}</td>
+        <td>{{ data.Position }}</td>
+        <td>{{ data.Email }}</td>
+        <td>{{ data.Access }}</td>
+      </tr>
+    </tbody>
+  </nz-table>

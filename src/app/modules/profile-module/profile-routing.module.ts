@@ -7,12 +7,12 @@ const routes: Routes = [
   {
     path: '',
     component: ProfileComponent,
-    children:
+    children: 
     [
-    {
-      path: 'pr',
+      {
+        path: 'pr',
 
-    },
+      },
   ]
   },
 ];
